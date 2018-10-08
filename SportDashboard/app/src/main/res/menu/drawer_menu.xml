@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Recommend">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_poster"
+                    android:icon="@drawable/ic_chat"
+                    android:title="Poster" />
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_chat"
+                    android:title="Announcement" />
+                <item
+                    android:id="@+id/nav_coachlist"
+                    android:icon="@drawable/ic_schedule"
+                    android:title="Coaches" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Activities">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_schedule"
+                    android:icon="@drawable/ic_schedule"
+                    android:title="Schedule" />
+                <item
+                    android:id="@+id/nav_book"
+                    android:icon="@drawable/ic_schedule"
+                    android:title="Book" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_send"
+                    android:title="Send" />
+            </group>
+        </menu>
+    </item>
+</menu>
