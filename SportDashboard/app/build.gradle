@@ -1,7 +1,14 @@
+//noinspection GradleCompatible
 apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
     defaultConfig {
         applicationId "edu.bjtu.example.sportsdashboard"
         minSdkVersion 15
@@ -10,6 +17,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -29,4 +37,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation files('libs/CircleImageView/gradle/wrapper/gradle-wrapper.jar')
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.6'
 }
